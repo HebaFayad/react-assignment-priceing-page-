@@ -25,3 +25,9 @@ export default class New extends Component {
     );
   }
 }
+New.defaultProps = {
+  title: "empty",
+  describe: "empty",
+  access:"empty",
+  btn:"empty"
+};
