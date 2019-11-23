@@ -1,24 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import New from "./New.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="title">
+           <h1>Pricing Page Using React</h1>
+       </div>
+       <div className="App">
+     <New title={"Plan A"} access={"Unlimited Access"} describe={"10$"} btn={"GET BASIC"} />
+     <New title={"Plan B"} access={"Unlimited Access"} describe={"30$"} btn={"GET PRO"} />
+     <New title={"Plan C"} access={"Unlimited Access"} describe={"60$"} btn={"GET PREMIUM"} />
+    </div>
     </div>
   );
 }
